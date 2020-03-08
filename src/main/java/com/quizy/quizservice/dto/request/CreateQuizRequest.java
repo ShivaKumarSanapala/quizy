@@ -2,6 +2,7 @@ package com.quizy.quizservice.dto.request;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
+import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,4 +18,9 @@ import lombok.RequiredArgsConstructor;
 public class CreateQuizRequest {
   private Long userId;
   private String quizName;
+  private String subject;
+  private String className;
+  private Date quizDate;
+  private Date startTime;
+
 }

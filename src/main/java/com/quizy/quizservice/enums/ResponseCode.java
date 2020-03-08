@@ -7,15 +7,8 @@ public enum ResponseCode {
   OK("OK"),
   INTERNAL_SERVER_ERROR("Internal Server Error", HttpStatus.INTERNAL_SERVER_ERROR),
   INVALID_REQUEST_DATA("Invalid request data"),
-  ERROR_FETCHING_PATIENT_DATA("Error fetching patient data"),
-  ERROR_FETCHING_DOCTOR_DATA("Error fetching doctor data"),
-  RESOURCE_NOT_FOUND("The resource you requested was not found", HttpStatus.NOT_FOUND),
-  ROOM_NOT_FOUND("The room you requested was not found", HttpStatus.OK),
-  EARLY_LINK_ACCESS("Link has been accessed too early", HttpStatus.OK),
-  LINK_ACTIVE("Link is active", HttpStatus.OK),
-  LINK_EXPIRED("Link has expired", HttpStatus.OK),
-  INVALID_LINK_TOKEN("Invalid link token"),
-  CALL_ENDED("Call has ended", HttpStatus.OK);
+  ERROR_FETCHING_QUIZ_DATA("Error fetching quiz data", HttpStatus.NOT_FOUND),
+  RESOURCE_NOT_FOUND("The resource you requested was not found", HttpStatus.NOT_FOUND);
 
   @Getter
   private String message;
